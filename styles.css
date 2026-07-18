@@ -1,0 +1,190 @@
+:root {
+  color-scheme: light;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  color-scheme: dark;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #07111f;
+  color: #f5f7ff;
+  line-height: 1.6;
+}
+
+.hero {
+  background: linear-gradient(135deg, #4f46e5, #7c3aed 60%, #0ea5e9);
+  min-height: 100vh;
+  padding: 24px 8% 80px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 70px;
+}
+
+.brand {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: white;
+  text-decoration: none;
+  letter-spacing: 0.04em;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: 600;
+}
+
+.hero-content {
+  max-width: 720px;
+  padding-top: 40px;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  opacity: 0.9;
+}
+
+.hero-content h1 {
+  font-size: clamp(2.2rem, 4vw, 3.5rem);
+  margin-bottom: 16px;
+}
+
+.hero-content p {
+  font-size: 1.08rem;
+  margin-bottom: 24px;
+  max-width: 620px;
+}
+
+.hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+button,
+a.ghost-link {
+  border-radius: 999px;
+  padding: 12px 22px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+button {
+  background: white;
+  color: #4f46e5;
+  border: none;
+  cursor: pointer;
+}
+
+.ghost-link {
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.today-text {
+  margin-top: 20px;
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
+
+.section {
+  padding: 70px 8%;
+}
+
+.section-head {
+  margin-bottom: 24px;
+}
+
+.section h2 {
+  font-size: 1.9rem;
+  margin-bottom: 10px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.card,
+.spotlight-box,
+.contact-box {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.22);
+}
+
+.spotlight {
+  background: linear-gradient(90deg, rgba(14,165,233,0.2), rgba(124,58,237,0.2));
+}
+
+.contact {
+  background: #0f172a;
+}
+
+.signup-form {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 18px;
+}
+
+input {
+  flex: 1;
+  min-width: 220px;
+  padding: 12px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 999px;
+  background: #111827;
+  color: white;
+}
+
+.join-message {
+  margin-top: 14px;
+  color: #bfdbfe;
+  font-weight: 600;
+}
+
+@media (max-width: 600px) {
+  .nav {
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+  }
+
+  .nav-links a {
+    margin-left: 0;
+    margin-right: 16px;
+  }
+
+  .signup-form {
+    flex-direction: column;
+  }
+}

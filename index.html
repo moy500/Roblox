@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Roblox-Friend-Group</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="nav">
+        <a class="brand" href="#">Roblox-Friend-Group</a>
+        <div class="nav-links">
+          <a href="#about">About</a>
+          <a href="#events">Events</a>
+          <a href="#join">Join</a>
+        </div>
+      </nav>
+
+      <div class="hero-content">
+        <p class="eyebrow">Friendly squad • daily fun • Roblox vibes</p>
+        <h1>Join the ultimate Roblox friend group.</h1>
+        <p>
+          Meet players who love adventure, teamwork, and making every game night unforgettable.
+        </p>
+        <div class="hero-actions">
+          <button id="ctaBtn" type="button">Join the squad</button>
+          <a class="ghost-link" href="#join">See how to join</a>
+        </div>
+        <p id="today" class="today-text"></p>
+      </div>
+    </header>
+
+    <main>
+      <section id="about" class="section">
+        <div class="section-head">
+          <p class="eyebrow">Why join</p>
+          <h2>Built for players who love friends, fun, and adventure.</h2>
+        </div>
+        <div class="cards">
+          <article class="card">
+            <h3>Daily hangouts</h3>
+            <p>Jump into popular games together and discover new favorites with your crew.</p>
+          </article>
+          <article class="card">
+            <h3>Cool events</h3>
+            <p>From game nights to themed challenges, there is always something exciting happening.</p>
+          </article>
+          <article class="card">
+            <h3>Friendly community</h3>
+            <p>Make new friends, share tips, and enjoy a welcoming space for every kind of player.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="events" class="section spotlight">
+        <div class="spotlight-box">
+          <p class="eyebrow">This week</p>
+          <h2>Build battles, roleplay nights, and surprise mini-events.</h2>
+          <p>
+            Whether you want to compete or chill, the group has a place for your style.
+          </p>
+        </div>
+      </section>
+
+      <section id="join" class="section contact">
+        <div class="contact-box">
+          <p class="eyebrow">Ready to jump in?</p>
+          <h2>Be part of the next event.</h2>
+          <p>Drop your Roblox username and we’ll send you an invite to the group chat.</p>
+          <form class="signup-form">
+            <input id="usernameInput" type="text" placeholder="Your Roblox username" />
+            <button id="joinBtn" type="button">Send invite</button>
+          </form>
+          <p id="joinMessage" class="join-message" aria-live="polite"></p>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
